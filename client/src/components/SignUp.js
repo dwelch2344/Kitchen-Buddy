@@ -1,13 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
+
+import Auth from '../utils/auths';
+import { useMutation } from '@apollo/client';
+import { ADD_USER } from '../utils/mutations';
 
 const SignUp = () => {
     // functionality
+    const [formState, setFormState] = useState({ username: '', email: '', password: '' });
+
+    const [addUser, { error }] = useMutation(ADD_USER);
+
+    // update state based on form input changes
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+
+        setFormState({
+        ...formState,
+        [name]: value,
+        });
+    };
+
+    // submit form (notice the async!)
+    const handleFormSubmit = async (event) => {
+        event.preventDefault();
+
+        // use try/catch instead of promises to handle errors
+        try {
+        //execute addUser mutation and pass in variable data from form
+        const { data } = await addUser({
+            variables: { ...formState }
+        });
+
+        Auth.login(data.addUser.token);
+        console.log(data);
+        
+        } catch (e) {
+        console.error(e);
+        }
+    };
     
         return (
             <main className='flex-row justify-center mb-4'>
 
                 <form 
-                // onSubmit={}
+                onSubmit={handleFormSubmit}
                 >
                     <h3>Register</h3>
 
@@ -19,7 +55,7 @@ const SignUp = () => {
                             placeholder="First name"
                             name='username'
                             id='username'
-                            // value={formState.username}
+                            value={formState.username}
                             />
                     </div>
 
@@ -31,7 +67,7 @@ const SignUp = () => {
                         placeholder="Enter email" 
                         name='email'
                         id='email'
-                        // value={formState.email}
+                        value={formState.email}
                         />
                     </div>
 
@@ -43,7 +79,7 @@ const SignUp = () => {
                         placeholder="Enter password" 
                         name='password'
                         id='password'
-                        // value={formState.password}
+                        value={formState.password}
                         />
                     </div>
 
@@ -51,7 +87,7 @@ const SignUp = () => {
                         Register
                     </button>
                 </form>
-                {/* {error && <div>Sign Up Failed!</div>} */}
+                {error && <div>Sign Up Failed!</div>}
             </main>
         );
 };

@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
+import NoMatch from './pages/NoMatch';
 
 
 //import Home from './pages/Home';
@@ -34,21 +35,22 @@ const client = new ApolloClient({
 
 function App() {
   return (
-    <ApolloProvider client={client}>
-      <Router>
-        <div className="App">
-          <NavBar />
-
+      <ApolloProvider client={client}>
+        <Router>
+          <div className='flex-column justify-flex-start min-100-vh'>
+            <NavBar />
+            <div className='body-main'>
               <Switch>
+                  {/* <Route exact path='/' component={Home} /> */}
+                  <Route path="/sign-in" component={Login} />
+                  <Route path="/sign-up" component={SignUp} />
 
-                <Route path="/sign-in" component={Login} />
-                <Route path="/sign-up" component={SignUp} />
+                  <Route component={NoMatch} />
               </Switch>
-
-        </div>
-      </Router>
-      <Footer />
-    </ApolloProvider>
+            </div>
+          </div>
+        </Router>
+      </ApolloProvider>
   );
 }
 

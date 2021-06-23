@@ -1,0 +1,7 @@
+.form-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 15%;
+
+	outline: red solid 2px;
+}

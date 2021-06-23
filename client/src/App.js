@@ -4,10 +4,12 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { setContext } from '@apollo/client/link/context';
 
+
 import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
+
 
 //import Home from './pages/Home';
 
@@ -37,17 +39,15 @@ function App() {
         <div className="App">
           <NavBar />
 
-          <div className="outer">
-            <div className="inner">
               <Switch>
 
                 <Route path="/sign-in" component={Login} />
                 <Route path="/sign-up" component={SignUp} />
               </Switch>
-            </div>
-          </div>
+
         </div>
       </Router>
+      <Footer />
     </ApolloProvider>
   );
 }

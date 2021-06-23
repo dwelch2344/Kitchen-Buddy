@@ -49,7 +49,7 @@ const SignUp = () => {
             >
                 <h3>Register</h3>
 
-                {/* <div className="form-group">
+                <div className="form-group">
                         <label>First name</label>
                         <input 
                             type="username" 
@@ -59,7 +59,7 @@ const SignUp = () => {
                             id='username'
                             value={formState.username}
                             />
-                    </div> */}
+                    </div>
 
                 <div className="form-group">
                     <label>Email</label>

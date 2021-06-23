@@ -44,7 +44,7 @@ const Login = (props) => {
 
     return (
             <main className='flex-row justify-center mb-4'>
-                <form>
+                <form onSubmit={handleFormSubmit}>
                     <h3>Log in</h3>
 
                     <div className="form-group">

@@ -9,7 +9,7 @@ import NavBar from './components/NavBar/NavBar';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
 
-import Home from './pages/Home';
+//import Home from './pages/Home';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -32,24 +32,28 @@ const client = new ApolloClient({
 
 function App() {
   return (
-      <ApolloProvider client={client}>
-        <Router>
-          <div className="App">
-            <NavBar />
-  
-            <div className="outer">
-              <div className="inner">
-                <Switch>
-                  {/* <Route exact path='/' component={Home} /> */}
-                  <Route path="/sign-in" component={Login} />
-                  <Route path="/sign-up" component={SignUp} />
-                </Switch>
-              </div>
+    <ApolloProvider client={client}>
+      <Router>
+        <div className="App">
+          <NavBar />
+
+          <div className="outer">
+            <div className="inner">
+              <Switch>
+
+                <Route path="/sign-in" component={Login} />
+                <Route path="/sign-up" component={SignUp} />
+              </Switch>
             </div>
           </div>
-        </Router>
-      </ApolloProvider>
+        </div>
+      </Router>
+    </ApolloProvider>
   );
 }
 
 export default App;
+
+
+
+{/* <Route exact path='/' component={Home} /> */ }

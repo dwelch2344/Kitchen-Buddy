@@ -3,13 +3,11 @@ import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@ap
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { setContext } from '@apollo/client/link/context';
-import './App.css';
-import './index.css';
 
-import Footer from './components/Footer';
-import NavBar from './components/NavBar';
-import Login from './components/Login';
-import SignUp from './components/SignUp';
+import Footer from './components/Footer/Footer';
+import NavBar from './components/NavBar/NavBar';
+import Login from './components/Login/Login';
+import SignUp from './components/SignUp/SignUp';
 
 import Home from './pages/Home';
 

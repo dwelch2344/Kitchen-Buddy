@@ -1,0 +1,68 @@
+.converter-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+
+	outline: red solid 2px;
+}
+
+.converter-app-container {
+	display: flex;
+	justify-content: center;
+	outline: red solid 2px;
+	height: 400px;
+}
+
+.converter-app {
+	background-color: #5b85aa;
+	width: 30%;
+	padding: 30px 50px;
+	border-radius: 30px;
+	min-width: 550px;
+}
+
+.from-and-to {
+	padding-top: 30px;
+	padding-bottom: 60px;
+	display: flex;
+	justify-content: space-around;
+}
+
+/* .convert-to {
+	margin-left: 45%;
+} */
+
+.converter-app select {
+	background-color: #f0e7df;
+	height: 60px;
+	width: 150px;
+	border-radius: 10px;
+	outline: none;
+	font-size: 18px;
+}
+
+.initial-value {
+	background-color: #f0e7df;
+	font-size: 30px;
+
+	border-radius: 12px;
+
+	height: 60px;
+	width: 250px;
+	outline: none;
+}
+
+.convert-btn {
+	margin-left: 10%;
+	background-color: #f79d65;
+
+	padding: 8px 28px;
+	border-radius: 26px;
+
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.convert-btn:hover {
+	background-color: #c27443;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import Recipes from '.';
 
 const Recipe = () => {
     return (
@@ -10,4 +11,4 @@ const Recipe = () => {
     );
 };
 
-export default Recipe
+export default Recipe;

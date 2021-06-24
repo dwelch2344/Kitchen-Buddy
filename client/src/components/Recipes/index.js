@@ -12,8 +12,8 @@ const Recipes = () => {
 
     const getRecipes = async () => {
         const response = await fetch('https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=e2f68dc2&app_key=7b48db1896534b041d46a13fee1d2b99');
-        const data = response.json();
-        console.log(data);
+        const data =  await response.json();
+        console.log(data.hits);
         // setRecipes(data.hits);
     }
 

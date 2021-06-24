@@ -1,6 +1,5 @@
 * {
 	box-sizing: border-box;
-	background-color: #f0e7df;
 }
 
 body {
@@ -19,4 +18,5 @@ html,
 #root {
 	width: 100%;
 	height: 100%;
+	background-color: #f0e7df;
 }

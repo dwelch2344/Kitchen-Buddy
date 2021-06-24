@@ -4,6 +4,8 @@ import Auth from '../../utils/auths';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../../utils/mutations';
 
+import './login.css';
+
 const Login = (props) => {
     const [formState, setFormState] = useState({ email: '', password: '' });
     
@@ -43,12 +45,12 @@ const Login = (props) => {
 };
 
     return (
-            <main className='flex-row justify-center mb-4'>
+            <main className='fform-container'>
                 <form onSubmit={handleFormSubmit}>
                     <h3>Log in</h3>
 
                     <div className="form-group">
-                        <label>Email</label>
+                        <label>email</label>
                         <input 
                         type="email" 
                         className="form-control" 
@@ -61,7 +63,7 @@ const Login = (props) => {
                     </div>
 
                     <div className="form-group">
-                        <label>Password</label>
+                        <label>password</label>
                         <input 
                         type="password" 
                         className="form-control" 
@@ -73,10 +75,11 @@ const Login = (props) => {
                         />
                     </div>
 
-
-                    <button type="submit" className="btn btn-dark btn-lg btn-block">
-                        Sign in
+                    <div className="btn-container">
+                    <button type="submit" className="btn">
+                    <div className="submit-btn-text">login</div>
                     </button>
+                    </div>
                     
                 </form>
                 {error && <div>Sign up failed</div>}

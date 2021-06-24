@@ -8,6 +8,7 @@ const NavBar = () => {
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
             <div className="container">
             <Link className="navbar-brand" to={"/sign-in"}>Lazer Beanz</Link>
+            <Link className="navbar-brand" to={"/recipes"}>Recipes</Link>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
@@ -15,6 +16,9 @@ const NavBar = () => {
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to={"/sign-up"}>Sign up</Link>
+                </li>
+                <li className="nav-item">
+                    <Link className="nav-link" to={"/timer"}>Timer</Link>
                 </li>
                 </ul>
             </div>

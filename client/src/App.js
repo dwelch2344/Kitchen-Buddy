@@ -5,11 +5,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { setContext } from '@apollo/client/link/context';
 
 
-import Footer from './components/Footer/Footer';
+// import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
 import NoMatch from './pages/NoMatch';
+import Recipes from './components/Recipes';
+import Timer from './components/pages/Timer';
 
 
 //import Home from './pages/Home';
@@ -44,10 +46,12 @@ function App() {
                   {/* <Route exact path='/' component={Home} /> */}
                   <Route path="/sign-in" component={Login} />
                   <Route path="/sign-up" component={SignUp} />
-
+                  <Route path="/recipes" component={Recipes} />
+                  <Route path="/timer" component={Timer} />
                   <Route component={NoMatch} />
               </Switch>
             </div>
+            {/* <Footer /> */}
           </div>
         </Router>
       </ApolloProvider>

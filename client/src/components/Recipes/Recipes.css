@@ -1,0 +1,14 @@
+.App {
+    margin-top: 70px;
+    margin-left: 300px;
+}
+
+.search-bar {
+    background-color: white;
+    width: 50%;
+}
+
+.search-button {
+    background-color: black;
+    color: white;
+}

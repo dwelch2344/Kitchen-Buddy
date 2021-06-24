@@ -4,7 +4,7 @@ import Auth from '../../utils/auths';
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../../utils/mutations';
 
-import './signup.css'
+import './signup.css';
 
 const SignUp = () => {
     // functionality
@@ -47,22 +47,22 @@ const SignUp = () => {
             <form
                 onSubmit={handleFormSubmit}
             >
-                <h3>Register</h3>
+                <h3>SIGN UP</h3>
 
                 <div className="form-group">
-                        <label>First name</label>
-                        <input 
-                            type="username" 
-                            className="form-control" 
-                            placeholder="First name"
-                            name='username'
-                            id='username'
-                            value={formState.username}
-                            />
-                    </div>
+                    <label>name</label>
+                    <input
+                        type="username"
+                        className="form-control"
+                        placeholder="First name"
+                        name='username'
+                        id='username'
+                        value={formState.username}
+                    />
+                </div>
 
                 <div className="form-group">
-                    <label>Email</label>
+                    <label>email</label>
                     <input
                         type="email"
                         className="form-control"
@@ -74,7 +74,7 @@ const SignUp = () => {
                 </div>
 
                 <div className="form-group">
-                    <label>Password</label>
+                    <label>password</label>
                     <input
                         type="password"
                         className="form-control"
@@ -84,10 +84,11 @@ const SignUp = () => {
                         value={formState.password}
                     />
                 </div>
-
-                <button type="submit" className="btn">
-                    Register
-                </button>
+                <div className="btn-container">
+                    <button type="submit" className="btn">
+                        <div className="submit-btn-text">register</div>
+                    </button>
+                </div>
             </form>
             {error && <div>Sign Up Failed!</div>}
         </main>

@@ -9,7 +9,7 @@ import { setContext } from '@apollo/client/link/context';
 import NavBar from './components/NavBar/NavBar';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
-import NoMatch from './pages/NoMatch';
+import NoMatch from './components/NoMatch';
 import Recipes from './components/Recipes';
 import Timer from './components/pages/Timer';
 

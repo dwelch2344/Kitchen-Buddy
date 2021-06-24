@@ -45,7 +45,7 @@ const Login = (props) => {
 };
 
     return (
-            <main className='fform-container'>
+            <main className='form-container'>
                 <form onSubmit={handleFormSubmit}>
                     <h3>Log in</h3>
 

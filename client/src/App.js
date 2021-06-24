@@ -12,6 +12,7 @@ import SignUp from './components/SignUp/SignUp';
 import NoMatch from './components/NoMatch';
 import Recipes from './components/Recipes';
 import Timer from './components/pages/Timer';
+import Converter from './components/pages/ConvertPage/ConvertPage';
 
 
 //import Home from './pages/Home';
@@ -47,6 +48,7 @@ function App() {
               <Route path="/sign-in" component={Login} />
               <Route path="/sign-up" component={SignUp} />
               <Route path="/recipes" component={Recipes} />
+              <Route path="/convert" component={Converter} />
               <Route path="/timer" component={Timer} />
               <Route component={NoMatch} />
             </Switch>

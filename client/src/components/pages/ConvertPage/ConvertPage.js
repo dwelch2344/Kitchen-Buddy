@@ -5,7 +5,27 @@ import './ConvertPage.css';
 const Converter = () => {
 
     return (
-        <div> our converter application </div>
+        <div className="converter-container">
+            <div className="from-and-to">
+
+                <select className="convert-from" placeholder="from"></select>
+
+                <select className="convert-to" placeholder="to"></select>
+
+            </div>
+
+            <div className="init-value-and-submit-btn">
+
+                <input className="initial-value" placeholder="initial value"></input>
+
+                <button className="convert-btn">convert!</button>
+
+            </div>
+
+            <div className="returned-value-container" placeholder="result">
+                {/* <div className="returned-value">{converter.result}</div> */}
+            </div>
+        </div>
     );
 };
 

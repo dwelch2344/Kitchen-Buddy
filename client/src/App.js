@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { setContext } from '@apollo/client/link/context';
 
 
+import Home from './components/pages/Home/Home';
 // import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
 import Login from './components/Login/Login';
@@ -44,7 +45,7 @@ function App() {
           <NavBar />
           <div className='body-main'>
             <Switch>
-              {/* <Route exact path='/' component={Home} /> */}
+              <Route exact path='/' component={Home} />
               <Route path="/sign-in" component={Login} />
               <Route path="/sign-up" component={SignUp} />
               <Route path="/recipes" component={Recipes} />

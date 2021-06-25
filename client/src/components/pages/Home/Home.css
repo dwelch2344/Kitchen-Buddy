@@ -1,0 +1,122 @@
+.home-main-container {
+	/* outline: orangered solid 2px; */
+
+	margin: 100px 10px;
+}
+
+.app-btn-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.single-btn-containers {
+	display: flex;
+	justify-content: center;
+
+	width: 100%;
+	height: 300px;
+}
+
+.convert-link-btn,
+.substitute-link-btn,
+.recipe-link-btn {
+	display: flex;
+	flex-direction: column;
+	/* 
+	outline: rgb(0, 100, 214) solid 2px; */
+	background-color: #f79d65;
+	border-radius: 20px;
+}
+
+.convert-link-btn:hover,
+.substitute-link-btn:hover,
+.recipe-link-btn:hover {
+	cursor: pointer;
+	/* background-color: #e48950; */
+	background-color: #5b85aa;
+
+	transition: 0.2s;
+}
+
+.convert-link-btn svg,
+.substitute-link-btn svg,
+.recipe-link-btn svg {
+	padding: 30px;
+
+	fill: #1e2139;
+	height: 300px;
+	/* outline: orangered solid 2px; */
+}
+
+.convert-link-text,
+.substitute-link-text,
+.recipe-link-text {
+	display: flex;
+	justify-content: center;
+
+	font-size: 30px;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 3000px) {
+	.single-btn-containers,
+	.convert-link-btn svg,
+	.substitute-link-btn svg,
+	.recipe-link-btn svg {
+		/* font-size: 50px; */
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.single-btn-containers,
+	.convert-link-btn svg,
+	.substitute-link-btn svg,
+	.recipe-link-btn svg {
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 930px) {
+	.single-btn-containers,
+	.convert-link-btn svg,
+	.substitute-link-btn svg,
+	.recipe-link-btn svg {
+		height: 325px;
+	}
+}
+
+@media screen and (max-width: 930px) {
+	.app-btn-container {
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 930px) {
+	.single-btn-containers {
+		margin-bottom: 75px;
+	}
+}
+
+/* original hover idea that was revealing text on hover */
+/* .convert-link-btn:hover,
+.substitute-link-btn:hover,
+.recipe-link-btn:hover {
+	cursor: pointer;
+
+	top: 0;
+	bottom: -50px;
+} */
+
+/* text { */
+/* width: max-content;
+	top: 0;
+	bottom: 0;
+	overflow: hidden; */
+/* } */
+
+/* necessary for original on hover  link-btn*/
+/* position: absolute; */
+
+/* necessary for original on hover single-btn-containers */
+/* position: relative; */

@@ -19,28 +19,31 @@
 
 .convert-link-btn,
 .substitute-link-btn,
-.recipe-link-btn {
+.recipe-link-btn,
+.timer-link-btn {
 	display: flex;
 	flex-direction: column;
 	/* 
 	outline: rgb(0, 100, 214) solid 2px; */
 	background-color: #f79d65;
 	border-radius: 20px;
+
+	transition: all 0.25s ease-in-out;
 }
 
 .convert-link-btn:hover,
 .substitute-link-btn:hover,
-.recipe-link-btn:hover {
+.recipe-link-btn:hover,
+.timer-link-btn:hover {
 	cursor: pointer;
 	/* background-color: #e48950; */
 	background-color: #5b85aa;
-
-	transition: 0.2s;
 }
 
 .convert-link-btn svg,
 .substitute-link-btn svg,
-.recipe-link-btn svg {
+.recipe-link-btn svg,
+.timer-link-btn svg {
 	padding: 30px;
 
 	fill: #1e2139;
@@ -50,7 +53,8 @@
 
 .convert-link-text,
 .substitute-link-text,
-.recipe-link-text {
+.recipe-link-text,
+.timer-link-text {
 	display: flex;
 	justify-content: center;
 
@@ -62,37 +66,52 @@
 	.single-btn-containers,
 	.convert-link-btn svg,
 	.substitute-link-btn svg,
-	.recipe-link-btn svg {
+	.recipe-link-btn svg,
+	.timer-link-btn svg {
 		/* font-size: 50px; */
 		height: 400px;
 	}
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1875px) {
 	.single-btn-containers,
 	.convert-link-btn svg,
 	.substitute-link-btn svg,
-	.recipe-link-btn svg {
+	.recipe-link-btn svg,
+	.timer-link-btn svg {
 		height: 300px;
 	}
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1450px) {
 	.single-btn-containers,
 	.convert-link-btn svg,
 	.substitute-link-btn svg,
-	.recipe-link-btn svg {
-		height: 325px;
+	.recipe-link-btn svg,
+	.timer-link-btn svg {
+		height: 275px;
 	}
 }
 
-@media screen and (max-width: 930px) {
+/* mobile and tablets */
+
+@media screen and (max-width: 1300px) {
+	.single-btn-containers,
+	.convert-link-btn svg,
+	.substitute-link-btn svg,
+	.recipe-link-btn svg,
+	.timer-link-btn svg {
+		height: 315px;
+	}
+}
+
+@media screen and (max-width: 1300px) {
 	.app-btn-container {
 		flex-wrap: wrap;
 	}
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1300px) {
 	.single-btn-containers {
 		margin-bottom: 75px;
 	}

@@ -14,6 +14,7 @@ import NoMatch from './components/NoMatch';
 import Recipes from './components/Recipes';
 import Timer from './components/pages/Timer';
 import Converter from './components/pages/ConvertPage/ConvertPage';
+// import Substitutes from './components/pages/Substitute';
 
 
 //import Home from './pages/Home';
@@ -46,10 +47,11 @@ function App() {
           <div className='body-main'>
             <Switch>
               <Route exact path='/' component={Home} />
-              <Route path="/sign-in" component={Login} />
+              <Route path="/login" component={Login} />
               <Route path="/sign-up" component={SignUp} />
-              <Route path="/recipes" component={Recipes} />
               <Route path="/convert" component={Converter} />
+              {/* <Route path="/substitutes" component={Substitutes} /> */}
+              <Route path="/recipes" component={Recipes} />
               <Route path="/timer" component={Timer} />
               <Route component={NoMatch} />
             </Switch>

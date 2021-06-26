@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "watch": "nodemon",
-    "seed": "node seeders/seeds.js",
+    "seed": "node seeders/seeds.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +17,12 @@
     "express": "^4.17.1",
     "faker": "^4.1.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.9"
+    "mongoose": "^5.9.9",
+    "passport": "^0.4.1",
+    "passport-anonymous": "^1.0.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"

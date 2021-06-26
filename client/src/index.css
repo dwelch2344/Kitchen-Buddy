@@ -1,5 +1,7 @@
 * {
 	box-sizing: border-box;
+	/* font color for whole app */
+	color: #1e2139;
 }
 
 body {

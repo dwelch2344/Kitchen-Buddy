@@ -1,18 +1,8 @@
-import React from 'react';
-
-import Auth from '../utils/auth';
-
-const Subsitute = () => {
-
-    const loggedIn = Auth.loggedin();
-
+const Substitute = () => {
     return (
-        <main>
-            <div>
-
-            </div>
-        </main> 
+        <div className='subsitute-container'>
+            
+            
+        </div>
     );
 };
-
-export default Subsitute;

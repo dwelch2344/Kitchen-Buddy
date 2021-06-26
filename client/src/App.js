@@ -11,7 +11,7 @@ import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
 import NoMatch from './pages/NoMatch';
 import Recipes from './components/Recipes';
-import Timer from './components/pages/Timer';
+import Timer from './components/Timer';
 
 
 //import Home from './pages/Home';
@@ -43,7 +43,6 @@ function App() {
             <NavBar />
             <div className='body-main'>
               <Switch>
-                  {/* <Route exact path='/' component={Home} /> */}
                   <Route path="/sign-in" component={Login} />
                   <Route path="/sign-up" component={SignUp} />
                   <Route path="/recipes" component={Recipes} />

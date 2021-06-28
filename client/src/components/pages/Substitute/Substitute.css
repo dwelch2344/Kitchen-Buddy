@@ -1,0 +1,143 @@
+.substitute-main-container {
+	background-color: #F0E7DF;
+	color: #1E2139;
+	margin: 50px 10px 50px 10px;
+}
+
+.table-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: baseline;
+}
+
+.single-btn-containers {
+	display: flex;
+	justify-content: center;
+
+	width: 100%;
+	height: 300px;
+}
+
+.convert-link-btn,
+.substitute-link-btn,
+.recipe-link-btn,
+.timer-link-btn {
+	display: flex;
+	flex-direction: column;
+	/* 
+	outline: rgb(0, 100, 214) solid 2px; */
+	background-color: #f79d65;
+	border-radius: 20px;
+
+	transition: all 0.25s ease-in-out;
+}
+
+.convert-link-btn:hover,
+.substitute-link-btn:hover,
+.recipe-link-btn:hover,
+.timer-link-btn:hover {
+	cursor: pointer;
+	/* background-color: #e48950; */
+	background-color: #5b85aa;
+}
+
+.convert-link-btn svg,
+.substitute-link-btn svg,
+.recipe-link-btn svg,
+.timer-link-btn svg {
+	padding: 30px;
+
+	fill: #1e2139;
+	height: 300px;
+	/* outline: orangered solid 2px; */
+}
+
+.convert-link-text,
+.substitute-link-text,
+.recipe-link-text,
+.timer-link-text {
+	display: flex;
+	justify-content: center;
+
+	font-size: 30px;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 3000px) {
+	.single-btn-containers,
+	.convert-link-btn svg,
+	.substitute-link-btn svg,
+	.recipe-link-btn svg,
+	.timer-link-btn svg {
+		/* font-size: 50px; */
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 1875px) {
+	.single-btn-containers,
+	.convert-link-btn svg,
+	.substitute-link-btn svg,
+	.recipe-link-btn svg,
+	.timer-link-btn svg {
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 1450px) {
+	.single-btn-containers,
+	.convert-link-btn svg,
+	.substitute-link-btn svg,
+	.recipe-link-btn svg,
+	.timer-link-btn svg {
+		height: 275px;
+	}
+}
+
+/* mobile and tablets */
+
+@media screen and (max-width: 1300px) {
+	.single-btn-containers,
+	.convert-link-btn svg,
+	.substitute-link-btn svg,
+	.recipe-link-btn svg,
+	.timer-link-btn svg {
+		height: 315px;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.app-btn-container {
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.single-btn-containers {
+		margin-bottom: 75px;
+	}
+}
+
+/* original hover idea that was revealing text on hover */
+/* .convert-link-btn:hover,
+.substitute-link-btn:hover,
+.recipe-link-btn:hover {
+	cursor: pointer;
+
+	top: 0;
+	bottom: -50px;
+} */
+
+/* text { */
+/* width: max-content;
+	top: 0;
+	bottom: 0;
+	overflow: hidden; */
+/* } */
+
+/* necessary for original on hover  link-btn*/
+/* position: absolute; */
+
+/* necessary for original on hover single-btn-containers */
+/* position: relative; */

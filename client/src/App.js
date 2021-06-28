@@ -19,8 +19,10 @@ import Converter from './components/pages/ConvertPage/ConvertPage';
 
 //import Home from './pages/Home';
 
+const graphqlEndpoint = process.env.REACT_APP_GRAPHQL_ENDPOINT || 'http://localhost:3001/graphql';
+
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: graphqlEndpoint,
 });
 
 const authLink = setContext((_, { headers }) => {

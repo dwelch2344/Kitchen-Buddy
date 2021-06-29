@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
 * {
 	box-sizing: border-box;
 	/* font color for whole app */
 	color: #1e2139;
+	font-family: 'Sen', sans-serif;
 }
 
 body {

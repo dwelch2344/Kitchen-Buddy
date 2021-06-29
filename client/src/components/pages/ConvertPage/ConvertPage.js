@@ -45,7 +45,8 @@ const handleConversion =  event => {
 
     return (
         <div className="converter-container">
-            <div className="from-and-to">
+            
+            <div className="converter-app-container">
 
                 <select className="convert-from" placeholder="from" value={from} onChange={(event)=> setFrom (event.target.value)}>
                 <option value="">From</option>
@@ -61,15 +62,29 @@ const handleConversion =  event => {
                 ))}
                 </select>
 
-            </div>
+                        <select className="convert-from" placeholder="from">
+                            <option value="" disabled selected hidden>convert from</option>
+                            <option value="cat">cat</option>
+                            <option value="cat">cat</option>
+                            <option value="cat">cat</option>
+                        </select>
 
-            <div className="init-value-and-submit-btn">
+                        <select className="convert-to" placeholder="to">
+                            <option value="" disabled selected hidden >convert to</option>
+                            <option value="cat">cat</option>
+                            <option value="cat">cat</option>
+                            <option value="cat">cat</option>
+                        </select>
 
                 <input className="convertVal" placeholder="initial value" onChange={(event)=> setConvertVal (event.target.value)} ></input>
 
                 <button className="convert-btn" onClick={handleConversion}>convert!</button>
 
-            </div>
+                        <input className="initial-value" placeholder="initial value"></input>
+
+                        <button className="convert-btn">convert!</button>
+
+                    </div>
 
             <div className="returned-value-container" placeholder="result" >
                 <div className="returned-value">{result}</div>

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { setContext } from '@apollo/client/link/context';
 
 
+import Home from './components/pages/Home/Home';
 // import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
 import Login from './components/Login/Login';
@@ -13,12 +14,15 @@ import NoMatch from './components/NoMatch';
 import Recipes from './components/Recipes';
 import Timer from './components/pages/Timer';
 import Converter from './components/pages/ConvertPage/ConvertPage';
+// import Substitutes from './components/pages/Substitute';
 
 
 //import Home from './pages/Home';
 
+const graphqlEndpoint = process.env.REACT_APP_GRAPHQL_ENDPOINT || 'http://localhost:3001/graphql';
+
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: graphqlEndpoint,
 });
 
 const authLink = setContext((_, { headers }) => {
@@ -44,11 +48,12 @@ function App() {
           <NavBar />
           <div className='body-main'>
             <Switch>
-              {/* <Route exact path='/' component={Home} /> */}
-              <Route path="/sign-in" component={Login} />
+              <Route exact path='/' component={Home} />
+              <Route path="/login" component={Login} />
               <Route path="/sign-up" component={SignUp} />
-              <Route path="/recipes" component={Recipes} />
               <Route path="/convert" component={Converter} />
+              {/* <Route path="/substitutes" component={Substitutes} /> */}
+              <Route path="/recipes" component={Recipes} />
               <Route path="/timer" component={Timer} />
               <Route component={NoMatch} />
             </Switch>

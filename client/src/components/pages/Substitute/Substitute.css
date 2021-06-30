@@ -1,0 +1,37 @@
+.substitute-main-container {
+	background-color: #F0E7DF;
+	color: #1E2139;
+	margin: 40px 10px 50px 25px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-color: #5B85AA;
+	border-width: 10px;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 30% 30% 40%;
+	grid-template-rows: 30% 30% 40%;
+	border-bottom-style: solid;
+	border-color: #5B85AA;
+	border-width: 3px;
+}
+
+@media screen and (max-width: 1000px) {
+	.grid-container h1 {
+		font-size: 27px;
+	}
+	.grid-container h2 {
+		font-size: 21px;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+	.grid-container {
+		grid-auto-rows: max-content;
+		display: flex;
+		flex-direction: column;
+		font-size: medium;
+	}
+}

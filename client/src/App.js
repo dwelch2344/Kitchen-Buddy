@@ -6,23 +6,17 @@ import { setContext } from '@apollo/client/link/context';
 
 
 import Home from './components/pages/Home/Home';
-// import Footer from './components/Footer/Footer';
+import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
 import NoMatch from './components/NoMatch';
 import Recipes from './components/Recipes';
-<<<<<<< HEAD
-import Timer from './components/Timer';
-=======
 import Timer from './components/pages/Timer';
 import Converter from './components/pages/ConvertPage/ConvertPage';
-// import Substitutes from './components/pages/Substitute';
->>>>>>> c0076276c956d5cd2fc5ce1ab6c0e621f3d1c49a
+import Substitutes from './components/pages/Substitute';
 
-
-//import Home from './pages/Home';
 
 const graphqlEndpoint = process.env.REACT_APP_GRAPHQL_ENDPOINT || 'http://localhost:3001/graphql';
 
@@ -58,7 +52,7 @@ function App() {
               <Route path="/login" component={Login} />
               <Route path="/sign-up" component={SignUp} />
               <Route path="/convert" component={Converter} />
-              {/* <Route path="/substitutes" component={Substitutes} /> */}
+              <Route path="/substitutes" component={Substitutes} />
               <Route path="/recipes" component={Recipes} />
               <Route path="/timer" component={Timer} />
               <Route component={NoMatch} />
@@ -73,6 +67,3 @@ function App() {
 
 export default App;
 
-
-
-{/* <Route exact path='/' component={Home} /> */ }

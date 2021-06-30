@@ -83,7 +83,7 @@ const Converter = () => {
                     </div>
 
                     <div className="returned-value-container" placeholder="result" >
-                        <div className="returned-value">{result}1</div>
+                        <div className="returned-value">{result}</div>
                     </div>
 
                 </div>

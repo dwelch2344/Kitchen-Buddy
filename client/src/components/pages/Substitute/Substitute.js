@@ -1,16 +1,16 @@
 import React from "react";
 
-import './Subsitute.css'
+import './Substitute.css';
 
 const Substitute = () => {
     return (
-        <body  class= 'substitute-main-container'>
-            <div class= 'grid-container'>
+        <body class='substitute-main-container'>
+            <div class='grid-container'>
                 <h1>Ingredients</h1>
                 <h1>Amount</h1>
                 <h1>Substitutes</h1>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Allspice</h2>
                 </div>
@@ -23,7 +23,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Baking Powder</h2>
                 </div>
@@ -37,7 +37,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Baking Soda</h2>
                 </div>
@@ -52,7 +52,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Barbeque Sauce</h2>
                 </div>
@@ -65,7 +65,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Beer</h2>
                 </div>
@@ -79,7 +79,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Brandy</h2>
                 </div>
@@ -92,7 +92,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Bread Crumbs</h2>
                 </div>
@@ -107,7 +107,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Broth (beef or chicken)</h2>
                 </div>
@@ -122,7 +122,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Brown Sugar</h2>
                 </div>
@@ -137,7 +137,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Butter (salted)</h2>
                 </div>
@@ -153,7 +153,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Butter (unsalted)</h2>
                 </div>
@@ -168,7 +168,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Buttermilk</h2>
                 </div>
@@ -181,7 +181,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Chili Sauce</h2>
                 </div>
@@ -194,7 +194,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Chocolate (unsweetened)</h2>
                 </div>
@@ -207,7 +207,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Cornstarch</h2>
                 </div>
@@ -220,7 +220,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Corn Syrup</h2>
                 </div>
@@ -234,7 +234,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Cream (half and half)</h2>
                 </div>
@@ -247,7 +247,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Cream (heavy)</h2>
                 </div>
@@ -261,7 +261,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Cream of Tartar</h2>
                 </div>
@@ -274,7 +274,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Crème Fraiche</h2>
                 </div>
@@ -287,7 +287,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Egg</h2>
                 </div>
@@ -305,7 +305,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Fats for Baking</h2>
                 </div>
@@ -319,7 +319,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Flour</h2>
                 </div>
@@ -334,7 +334,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Garlic</h2>
                 </div>
@@ -349,7 +349,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Herbs (fresh)</h2>
                 </div>
@@ -363,7 +363,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Ketchup</h2>
                 </div>
@@ -376,7 +376,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Lemon Juice</h2>
                 </div>
@@ -391,7 +391,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Lemon Zest</h2>
                 </div>
@@ -404,7 +404,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Mayonaise</h2>
                 </div>
@@ -418,7 +418,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Milk (whole)</h2>
                 </div>
@@ -435,7 +435,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Molasses</h2>
                 </div>
@@ -448,7 +448,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Shortening</h2>
                 </div>
@@ -462,7 +462,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Sour Cream</h2>
                 </div>
@@ -477,7 +477,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Soy Sauce</h2>
                 </div>
@@ -490,7 +490,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Sweetened Condensed Milk</h2>
                 </div>
@@ -503,7 +503,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Vegetable Oil</h2>
                 </div>
@@ -517,7 +517,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Vinegar</h2>
                 </div>
@@ -531,7 +531,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>White Sugar</h2>
                 </div>
@@ -547,7 +547,7 @@ const Substitute = () => {
                     </ul>
                 </div>
             </div>
-            <div class= 'grid-container'>
+            <div class='grid-container'>
                 <div>
                     <h2>Wine</h2>
                 </div>

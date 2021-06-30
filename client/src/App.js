@@ -13,9 +13,13 @@ import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
 import NoMatch from './components/NoMatch';
 import Recipes from './components/Recipes';
+<<<<<<< HEAD
+import Timer from './components/Timer';
+=======
 import Timer from './components/pages/Timer';
 import Converter from './components/pages/ConvertPage/ConvertPage';
 // import Substitutes from './components/pages/Substitute';
+>>>>>>> c0076276c956d5cd2fc5ce1ab6c0e621f3d1c49a
 
 
 //import Home from './pages/Home';

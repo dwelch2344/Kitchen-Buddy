@@ -1,7 +1,10 @@
 {
   "name": "kitchen-buddy",
   "version": "1.0.0",
-  "engines": {"npm": "6.x"},
+  "engines": {
+    "npm": "6.x",
+    "node": "v14.16.0"
+  },
   "description": "## What is it?",
   "main": "index.js",
   "dependencies": {
@@ -13,7 +16,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd client && npm run build",
     "start": "cd server && npm start",
-    "postinstall": "npm run build"
+    "install": "cd server && npm i && cd ../client && npm i"
   },
   "repository": {
     "type": "git",

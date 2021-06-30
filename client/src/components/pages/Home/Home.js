@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import HomeBtn from "./HomeBtn";
+
 
 
 import { ReactComponent as ConvertSvg } from '../../../assets/img/measuring-cup-svgrepo-com.svg';
@@ -10,6 +12,32 @@ import { ReactComponent as TimerSvg } from '../../../assets/img/timer-svgrepo-co
 
 import './Home.css';
 
+const btnInfo = [
+    {
+        title: "convert",
+        link: "/convert",
+        svg: <ConvertSvg />
+    },
+    {
+        title: "substitutes",
+        link: "/substitutes",
+        svg: <SubstituteSvg />
+    },
+    {
+        title: "recipes",
+        link: "/recipes",
+        svg: <RecipeSvg />
+    },
+    {
+        title: "timer",
+        link: "/timer",
+        svg: <TimerSvg />
+    }
+
+];
+
+
+
 const Home = () => {
 
     return (
@@ -17,54 +45,7 @@ const Home = () => {
 
             <div className="app-btn-container">
 
-                <div className="single-btn-containers">
-
-                    <div className="convert-link-btn">
-                        <Link to="/convert">
-                            <div><ConvertSvg /></div>
-                        </Link>
-                        <div className="convert-link-text">
-                            convert
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div className="single-btn-containers">
-                    <div className="substitute-link-btn">
-                        {/* <Link to="/substitutes"> */}
-                        <div><SubstituteSvg /></div>
-                        {/* </Link> */}
-                        <div className="substitute-link-text">
-                            substitutes
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className="single-btn-containers">
-                    <div className="recipe-link-btn">
-                        <Link to="/recipes">
-                            <div><RecipeSvg /></div>
-                        </Link>
-                        <div className="recipe-link-text">
-                            recipes
-                        </div>
-                    </div>
-                </div>
-
-                <div className="single-btn-containers">
-                    <div className="timer-link-btn">
-                        <Link to="/timer">
-                            <div><TimerSvg /></div>
-                        </Link>
-                        <div className="timer-link-text">
-                            timer
-                        </div>
-                    </div>
-                </div>
+                {btnInfo.map(p => <HomeBtn {...p} />)}
 
 
 
@@ -75,3 +56,56 @@ const Home = () => {
 };
 
 export default Home;
+
+
+
+
+
+// <div className="single-btn-containers">
+
+// <div className="link-btn">
+//     <Link to="/convert">
+//         <div><ConvertSvg /></div>
+//     </Link>
+//     <div className="link-text">
+//         convert
+//     </div>
+
+// </div>
+
+// </div>
+
+
+// <div className="single-btn-containers">
+// <div className="link-btn">
+//     {/* <Link to="/substitutes"> */}
+//     <div><SubstituteSvg /></div>
+//     {/* </Link> */}
+//     <div className="link-text">
+//         substitutes
+//     </div>
+// </div>
+// </div>
+
+
+// <div className="single-btn-containers">
+// <div className="link-btn">
+//     <Link to="/recipes">
+//         <div><RecipeSvg /></div>
+//     </Link>
+//     <div className="link-text">
+//         recipes
+//     </div>
+// </div>
+// </div>
+
+// <div className="single-btn-containers">
+// <div className="link-btn">
+//     <Link to="/timer">
+//         <div><TimerSvg /></div>
+//     </Link>
+//     <div className="link-text">
+//         timer
+//     </div>
+// </div>
+// </div>

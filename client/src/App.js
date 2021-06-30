@@ -8,6 +8,7 @@ import { setContext } from '@apollo/client/link/context';
 import Home from './components/pages/Home/Home';
 // import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
 import NoMatch from './components/NoMatch';
@@ -44,9 +45,10 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div className='flex-column justify-flex-start min-100-vh'>
-          <NavBar />
+        <div >
+
           <div className='body-main'>
+            <NavBar />
             <Switch>
               <Route exact path='/' component={Home} />
               <Route path="/login" component={Login} />
@@ -58,7 +60,7 @@ function App() {
               <Route component={NoMatch} />
             </Switch>
           </div>
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </Router>
     </ApolloProvider>

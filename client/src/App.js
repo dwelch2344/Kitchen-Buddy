@@ -6,7 +6,7 @@ import { setContext } from '@apollo/client/link/context';
 
 
 import Home from './components/pages/Home/Home';
-// import Footer from './components/Footer/Footer';
+import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 import Login from './components/Login/Login';
@@ -15,10 +15,8 @@ import NoMatch from './components/NoMatch';
 import Recipes from './components/Recipes';
 import Timer from './components/pages/Timer';
 import Converter from './components/pages/ConvertPage/ConvertPage';
-import Substitutes from './components/pages/Substitute/Substitute.js';
+import Substitutes from './components/pages/Substitute';
 
-
-//import Home from './pages/Home';
 
 const graphqlEndpoint = process.env.REACT_APP_GRAPHQL_ENDPOINT || 'http://localhost:3001/graphql';
 
@@ -69,6 +67,3 @@ function App() {
 
 export default App;
 
-
-
-{/* <Route exact path='/' component={Home} /> */ }

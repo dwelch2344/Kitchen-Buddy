@@ -1,7 +1,11 @@
 import './ConvertPage.css';
 import React, { useState } from "react";
 
+
+import { ReactComponent as ArrowRightSvg } from '../../../assets/img/arrow-right-svgrepo-com.svg';
+
 let convert = require('convert-units');
+
 
 
 
@@ -53,14 +57,16 @@ const Converter = () => {
                     <div className="from-and-to">
 
                         <select className="convert-from" placeholder="from" value={from} onChange={(event) => setFrom(event.target.value)}>
-                            <option value="">From</option>
+                            <option value="">from</option>
                             {units.map((unit) => (
                                 <option value={unit.value} key={"from" + unit.key}> {unit.key} </option>
                             ))}
                         </select>
 
+                        <ArrowRightSvg />
+
                         <select className="convert-to" placeholder="to" value={to} onChange={(event) => setTo(event.target.value)}>
-                            <option value="">To</option>
+                            <option value="">to</option>
                             {units.map((unit) => (
                                 <option value={unit.value} key={"to" + unit.key}> {unit.key} </option>
                             ))}
@@ -77,7 +83,7 @@ const Converter = () => {
                     </div>
 
                     <div className="returned-value-container" placeholder="result" >
-                        <div className="returned-value">{result}</div>
+                        <div className="returned-value">{result}1</div>
                     </div>
 
                 </div>

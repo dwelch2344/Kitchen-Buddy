@@ -2,6 +2,8 @@
 	display: flex;
 	justify-content: center;
 	margin-top: 10%;
+
+	min-height: calc(100vh - 10px);
 }
 
 .converter-app-container {
@@ -27,9 +29,11 @@
 	justify-content: space-around;
 }
 
-/* .convert-to {
-	margin-left: 45%;
-} */
+.from-and-to svg {
+	fill: #1e2139;
+	height: 60px;
+	width: 40px;
+}
 
 .converter-app select {
 	padding-left: 10px;
@@ -39,6 +43,7 @@
 	border-radius: 10px;
 	outline: none;
 	font-size: 18px;
+	font-weight: bold;
 }
 
 .initial-value {
@@ -73,5 +78,25 @@
 	background-color: #c27443;
 }
 
+.returned-value-container {
+	display: flex;
+	justify-content: center;
+
+	padding-top: 40px;
+}
+
 .returned-value {
+	border: none;
+
+	display: flex;
+	justify-content: center;
+
+	background-color: #f0e7df;
+	font-size: 30px;
+
+	border-radius: 12px;
+
+	height: 45px;
+	width: 200px;
+	outline: none;
 }

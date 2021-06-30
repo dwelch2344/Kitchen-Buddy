@@ -50,7 +50,9 @@
 	font-weight: bold;
 }
 
-@media screen and (max-width: 3000px) {
+/* use minwidth */
+
+@media screen and (max-width: 69420px) {
 	.single-btn-containers,
 	.link-btn svg {
 		/* font-size: 50px; */

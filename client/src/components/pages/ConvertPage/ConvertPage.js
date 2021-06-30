@@ -76,9 +76,9 @@ const Converter = () => {
 
                     <div className="init-value-and-submit-btn">
 
-                        <input className="convertVal initial-value" placeholder="initial value" onChange={(event) => setConvertVal(event.target.value)} ></input>
+                        <input className="convertVal initial-value second-row-convert" placeholder="initial value" onChange={(event) => setConvertVal(event.target.value)} ></input>
 
-                        <button className="convert-btn" onClick={handleConversion}>convert!</button>
+                        <button className="convert-btn second-row-convert" onClick={handleConversion}>convert!</button>
 
                     </div>
 

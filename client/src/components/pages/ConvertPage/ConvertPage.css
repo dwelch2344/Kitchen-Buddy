@@ -100,3 +100,10 @@
 	width: 200px;
 	outline: none;
 }
+
+@media screen and (max-width: 650px) {
+	.converter-app {
+		display: flex;
+		flex-direction: column;
+	}
+}

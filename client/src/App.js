@@ -12,9 +12,9 @@ import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
 import NoMatch from './components/NoMatch';
 import Recipes from './components/Recipes';
-import Timer from './components/pages/Timer';
+import Timer from './components/Timer';
 import Converter from './components/pages/ConvertPage/ConvertPage';
-import Substitutes from './components/pages/Substitute';
+import Substitutes from './components/pages/Substitute/Substitute';
 
 
 const graphqlEndpoint = process.env.REACT_APP_GRAPHQL_ENDPOINT || 'http://localhost:3001/graphql';

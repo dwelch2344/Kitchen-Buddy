@@ -2,14 +2,12 @@
 	display: flex;
 	justify-content: center;
 	margin-top: 10%;
-
-	outline: red solid 2px;
 }
 
 .converter-app-container {
 	display: flex;
 	justify-content: center;
-	outline: red solid 2px;
+
 	height: 400px;
 }
 
@@ -24,6 +22,7 @@
 .from-and-to {
 	padding-top: 30px;
 	padding-bottom: 60px;
+
 	display: flex;
 	justify-content: space-around;
 }
@@ -33,10 +32,10 @@
 } */
 
 .converter-app select {
-	padding-left: 5px;
+	padding-left: 10px;
 	background-color: #f0e7df;
 	height: 60px;
-	width: 150px;
+	width: 175px;
 	border-radius: 10px;
 	outline: none;
 	font-size: 18px;
@@ -72,4 +71,7 @@
 
 .convert-btn:hover {
 	background-color: #c27443;
+}
+
+.returned-value {
 }

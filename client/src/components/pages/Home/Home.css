@@ -17,10 +17,7 @@
 	height: 300px;
 }
 
-.convert-link-btn,
-.substitute-link-btn,
-.recipe-link-btn,
-.timer-link-btn {
+.link-btn {
 	display: flex;
 	flex-direction: column;
 	/* 
@@ -31,19 +28,13 @@
 	transition: all 0.25s ease-in-out;
 }
 
-.convert-link-btn:hover,
-.substitute-link-btn:hover,
-.recipe-link-btn:hover,
-.timer-link-btn:hover {
+.link-btn:hover {
 	cursor: pointer;
 	/* background-color: #e48950; */
 	background-color: #5b85aa;
 }
 
-.convert-link-btn svg,
-.substitute-link-btn svg,
-.recipe-link-btn svg,
-.timer-link-btn svg {
+.link-btn svg {
 	padding: 30px;
 
 	fill: #1e2139;
@@ -51,10 +42,7 @@
 	/* outline: orangered solid 2px; */
 }
 
-.convert-link-text,
-.substitute-link-text,
-.recipe-link-text,
-.timer-link-text {
+.link-text {
 	display: flex;
 	justify-content: center;
 
@@ -62,12 +50,11 @@
 	font-weight: bold;
 }
 
-@media screen and (max-width: 3000px) {
+/* use minwidth */
+
+@media screen and (max-width: 69420px) {
 	.single-btn-containers,
-	.convert-link-btn svg,
-	.substitute-link-btn svg,
-	.recipe-link-btn svg,
-	.timer-link-btn svg {
+	.link-btn svg {
 		/* font-size: 50px; */
 		height: 400px;
 	}
@@ -75,20 +62,14 @@
 
 @media screen and (max-width: 1875px) {
 	.single-btn-containers,
-	.convert-link-btn svg,
-	.substitute-link-btn svg,
-	.recipe-link-btn svg,
-	.timer-link-btn svg {
+	.link-btn svg {
 		height: 300px;
 	}
 }
 
 @media screen and (max-width: 1450px) {
 	.single-btn-containers,
-	.convert-link-btn svg,
-	.substitute-link-btn svg,
-	.recipe-link-btn svg,
-	.timer-link-btn svg {
+	.link-btn svg {
 		height: 275px;
 	}
 }
@@ -97,10 +78,7 @@
 
 @media screen and (max-width: 1300px) {
 	.single-btn-containers,
-	.convert-link-btn svg,
-	.substitute-link-btn svg,
-	.recipe-link-btn svg,
-	.timer-link-btn svg {
+	.link-btn svg {
 		height: 315px;
 	}
 }

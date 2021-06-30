@@ -8,7 +8,6 @@ import { setContext } from '@apollo/client/link/context';
 import Home from './components/pages/Home/Home';
 import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
-import Footer from './components/Footer/Footer';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
 import NoMatch from './components/NoMatch';

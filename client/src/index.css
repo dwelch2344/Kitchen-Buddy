@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
 * {
 	box-sizing: border-box;
+	/* font color for whole app */
+	color: #1e2139;
+	font-family: 'Sen', sans-serif;
 }
 
-body {
-	min-height: 100vh;
+.body-main {
+	min-height: calc(100vh - 75px);
+
 	display: flex;
-	font-weight: 400;
-	font-family: sans-serif;
-	background: #12c2e9; /* fallback for old browsers */
-	/* background: -webkit-linear-gradient(to right, #1FDEA7, #12c2e9);  Chrome 10-25, Safari 5.1-6 */
+	flex-direction: column;
+
 	background-color: #f0e7df;
 }
 

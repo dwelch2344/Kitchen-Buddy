@@ -1,9 +1,10 @@
 const mongoose = require('mongoose');
 
+const url = process.env.MONGODB_URI || 'mongodb://localhost/deep-thoughts';
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/deep-thoughts',
+  url,
   {
-    useNewUrlParser: true, 
+    useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
     useFindAndModify: false

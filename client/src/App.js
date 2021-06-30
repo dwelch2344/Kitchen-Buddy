@@ -5,19 +5,29 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { setContext } from '@apollo/client/link/context';
 
 
+import Home from './components/pages/Home/Home';
 // import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
-import NoMatch from './pages/NoMatch';
+import NoMatch from './components/NoMatch';
 import Recipes from './components/Recipes';
+<<<<<<< HEAD
 import Timer from './components/Timer';
+=======
+import Timer from './components/pages/Timer';
+import Converter from './components/pages/ConvertPage/ConvertPage';
+// import Substitutes from './components/pages/Substitute';
+>>>>>>> c0076276c956d5cd2fc5ce1ab6c0e621f3d1c49a
 
 
 //import Home from './pages/Home';
 
+const graphqlEndpoint = process.env.REACT_APP_GRAPHQL_ENDPOINT || 'http://localhost:3001/graphql';
+
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: graphqlEndpoint,
 });
 
 const authLink = setContext((_, { headers }) => {
@@ -37,23 +47,27 @@ const client = new ApolloClient({
 
 function App() {
   return (
-      <ApolloProvider client={client}>
-        <Router>
-          <div className='flex-column justify-flex-start min-100-vh'>
+    <ApolloProvider client={client}>
+      <Router>
+        <div >
+
+          <div className='body-main'>
             <NavBar />
-            <div className='body-main'>
-              <Switch>
-                  <Route path="/sign-in" component={Login} />
-                  <Route path="/sign-up" component={SignUp} />
-                  <Route path="/recipes" component={Recipes} />
-                  <Route path="/timer" component={Timer} />
-                  <Route component={NoMatch} />
-              </Switch>
-            </div>
-            {/* <Footer /> */}
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route path="/login" component={Login} />
+              <Route path="/sign-up" component={SignUp} />
+              <Route path="/convert" component={Converter} />
+              {/* <Route path="/substitutes" component={Substitutes} /> */}
+              <Route path="/recipes" component={Recipes} />
+              <Route path="/timer" component={Timer} />
+              <Route component={NoMatch} />
+            </Switch>
           </div>
-        </Router>
-      </ApolloProvider>
+          <Footer />
+        </div>
+      </Router>
+    </ApolloProvider>
   );
 }
 

@@ -15,7 +15,7 @@ import NoMatch from './components/NoMatch';
 import Recipes from './components/Recipes';
 import Timer from './components/pages/Timer';
 import Converter from './components/pages/ConvertPage/ConvertPage';
-// import Substitutes from './components/pages/Substitute';
+import Substitutes from './components/pages/Substitute/Substitute.js';
 
 
 //import Home from './pages/Home';
@@ -54,7 +54,7 @@ function App() {
               <Route path="/login" component={Login} />
               <Route path="/sign-up" component={SignUp} />
               <Route path="/convert" component={Converter} />
-              {/* <Route path="/substitutes" component={Substitutes} /> */}
+              <Route path="/substitutes" component={Substitutes} />
               <Route path="/recipes" component={Recipes} />
               <Route path="/timer" component={Timer} />
               <Route component={NoMatch} />

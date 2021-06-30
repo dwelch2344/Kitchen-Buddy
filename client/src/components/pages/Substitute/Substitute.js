@@ -1,6 +1,6 @@
 import React from "react";
 
-import './Subsitute.css'
+import './Substitute.css'
 
 const Substitute = () => {
     return (
